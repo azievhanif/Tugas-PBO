@@ -1,0 +1,40 @@
+using System;
+
+namespace Inheritance
+{
+    class Hewan
+    {
+
+        public string name;
+
+        public void display()
+        {
+            Console.WriteLine("Aku adalah ikan");
+        }
+
+    }
+
+    class Ikan : Hewan
+    {
+        public void getName()
+        {
+            Console.WriteLine("Namaku " + name);
+        }
+    }
+
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+
+            Ikan nIkan = new Ikan();
+
+            nIkan.name = "Pisang";
+            nIkan.display();
+            nIkan.getName();
+            Console.ReadLine();
+        }
+
+    }
+}
