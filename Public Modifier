@@ -1,0 +1,25 @@
+using System;
+
+namespace PublicModifier
+{
+
+    class Mahasiswa
+    {
+        public string nama = "Hanip";
+        public void print()
+        {
+            Console.WriteLine("Hai, salam kenal yaa");
+        }
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Mahasiswa mhs = new Mahasiswa();
+            Console.WriteLine("Nama: " + mhs.nama);
+            mhs.print();
+            Console.ReadLine();
+        }
+    }
+}
