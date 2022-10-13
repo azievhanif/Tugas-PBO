@@ -1,0 +1,31 @@
+using System;
+
+namespace Destructor
+{
+
+    class Mahasiswa
+    {
+        public Mahasiswa()
+        {
+            Console.WriteLine("Objek dibuat");
+        }
+        // Destructor
+        ~Mahasiswa()
+        {
+            Console.WriteLine("Objek dihancurkan");
+        }
+    }
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            Run();
+            GC.Collect();
+
+        }
+        public static void Run()
+        {
+            Mahasiswa mhs = new Mahasiswa();
+        }
+    }
+}
