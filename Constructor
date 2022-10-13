@@ -1,0 +1,26 @@
+using System;
+
+namespace Constructor
+{
+    public class Program
+    {
+        class Nasgor
+        {
+            private int jumlah;
+            private string nama;
+            public Nasgor(string name)
+            {
+                nama = name;
+            }
+            public string getNama()
+            {
+                return nama;
+            }
+        }
+        public static void Main(string[] args)
+        {
+            Nasgor nasgor = new Nasgor("Cak Geng");
+            Console.WriteLine(nasgor.getNama());
+        }
+    }
+}
