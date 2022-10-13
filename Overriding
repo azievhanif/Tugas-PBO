@@ -1,0 +1,31 @@
+using System;
+
+namespace Overriding
+{
+    class Makanan
+    {
+        public virtual void makan()
+        {
+
+            Console.WriteLine("Saya makan nasi");
+        }
+    }
+
+    class Masakan : Makanan
+    {
+        public override void makan()
+        {
+
+            Console.WriteLine("Saya makan nasi goreng");
+        }
+    }
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+            Masakan nasgor = new Masakan();
+            nasgor.makan();
+        }
+    }
+}
