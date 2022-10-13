@@ -1,0 +1,15 @@
+using System;
+using System.Collections;
+
+namespace PrivateModifier
+{
+    class Mahasiswa
+    {
+        private string nama = "Aziev";
+        static void Main(string[] args)
+        {
+            Mahasiswa mhs = new Mahasiswa();
+            Console.WriteLine(mhs.nama);
+        }
+    }
+}
