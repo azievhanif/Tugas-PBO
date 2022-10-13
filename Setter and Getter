@@ -1,0 +1,32 @@
+using System;
+
+    namespace SetterGetter
+    {
+        class User
+        {
+            static void Main(String[] args)
+            {
+                user az = new user();
+                az.Username = "azievhanif";
+                az.Password = "hanip123";
+
+                Console.WriteLine("Username: " + az.Username);
+                Console.WriteLine("Password: " + az.Password);
+            }
+        }
+        public class user
+        {
+            string username;
+            string password;
+            public string Username
+            {
+                get { return username; }
+                set { username = value; }
+            }
+            public string Password
+            {
+                get { return password; }
+                set { password = value; }
+            }
+        }
+    }
