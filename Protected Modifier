@@ -1,0 +1,20 @@
+using System;
+
+namespace ProtectedModifier
+{
+
+    class Mahasiswa
+    {
+        protected string nama = "Bahtiar";
+    }
+
+    class Program : Mahasiswa
+    {
+        static void Main(string[] args)
+        {
+            Program program = new Program();
+            Console.WriteLine("Nama: " + program.nama);
+            Console.ReadLine();
+        }
+    }
+}
